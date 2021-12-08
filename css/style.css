@@ -1,0 +1,419 @@
+/* general */
+:root {
+    --yellow : rgb(255, 196, 0) ;
+    --gray : rgba(255, 255, 255, 0.65);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+    height: 100%;
+}
+
+h1 , h2 , h3 , h4 {
+    font-family: 'Smooch', cursive;
+    font-weight: 500;
+    text-transform: capitalize ;
+}
+
+h1 , .qriental h2 , 
+.statistics h2  , 
+.statistics .prix div p ,
+.checken h2 {
+    color: var(--yellow);
+}
+
+button , input[type="submit"] {
+    background: var(--yellow);
+    color: black;
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 163px;
+    text-transform: uppercase;
+}
+
+li {
+    list-style: none;
+}
+
+.overlay1 {
+    background: url(../image/bg2.png) no-repeat;
+    background-position: -87px 1px;
+}
+
+.overlay2 {
+    background-image: url(../image/bg2.png) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat ;
+}
+
+.overlay2-bg {
+    background: url(../image/Design.png) ;
+}
+
+.overlay3 {
+    background: url(../image/bg3.png) no-repeat ;
+    background-size: 100%  100%;
+    background-position: 0px -133px;
+
+}
+
+/* header */
+header {
+    background: url("../image/food.png") no-repeat ;
+    background-size: 49% 100%;
+    height: 434px;
+    color: #fff;
+}
+
+header .logo {
+    cursor: pointer;
+}
+
+/* nav */
+nav {
+    width: 100%;
+    position: absolute;
+}
+
+nav .container {
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.title-for-resto {
+    height: 100%;
+    background: url(../image/bg11.png) , url("..//image/Design.png") no-repeat ;
+    background-size: 222% 215%;
+    background-position: -105px -393px ;
+    width: 70%;
+    height: 100%;
+    margin-left: auto;
+}
+
+.title-for-resto .title-here {
+    background: url("../image/Design.png") no-repeat;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: 63% -10%;
+    background-size: 592px 725px;
+}
+
+.title-for-resto .title-here div {
+    width: 35%;
+    height: 50%;
+}
+
+.title-for-resto .title-here div h1 {
+    font-size: 60px;
+}
+
+.title-for-resto .title-here div p {
+    color: var(--gray);
+    letter-spacing: 2px;
+}
+
+.title-for-resto .title-here div button {
+    margin-top: 22px;
+}
+
+/* best seller */
+.best-seller {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.best-seller .article {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.best-seller .article img {
+    width: 180px;
+}
+
+.best-seller .article .info {
+    margin: 10px 0;
+}
+
+.best-seller .article .info h4 {
+    font-size: 32px;
+}
+
+.best-seller .article .info p {
+    width: 59%;
+    margin: auto;
+}
+
+.best-seller .title {
+    width: 44%;
+    margin: auto;
+}
+
+/* qriental taste */
+.best-seller .title h2 {
+    font-size: 50px;
+}
+
+.image-qriental  {
+    height: 400px;
+}
+
+.qriental-taste .image-qriental {
+    display: flex;
+}
+
+.qriental , .image {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 50%;
+}
+
+.qriental div {
+    width: 50%;
+}
+
+.qriental div h2 {
+    font-size: 38px;
+}
+
+.qriental div p {
+    margin: 20px 0;
+    margin-top: 10px;
+    color: var(--gray);
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* qriental taste statistics */
+.statistics {
+    text-align: center;
+    padding: 50px 0;
+    color: var(--gray);
+}
+
+.statistics h2 {
+    font-size: 50px;
+}
+
+.statistics p:not(.prix p) {
+    width: 40%;
+    margin: auto;
+}
+
+.statistics .prix {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.statistics .prix div {
+    width: 20%;
+    height: 117px ;
+    border-radius: 50%;
+    border: solid var(--gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.statistics .prix div p {
+    font-size: 30px;
+}
+
+.statistics .prix div span {
+    text-transform: uppercase;
+}
+
+/* checken grilled */
+.checken-grilled {
+    display: flex;
+    height: 654px;
+    padding: 100px 0 ;
+}
+
+.checken , .checken-grilled .image {
+    width: 50%;
+}
+
+.checken {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+.checken div {
+    padding: 100px;
+}
+
+.checken h2 {
+    font-size: 56px;
+}
+
+.checken p {
+    margin: 11px 0 20px ;
+    color: var(--gray) ; 
+}
+
+/* cerara fileds */
+.cerara-fileds {
+    background: url(../image/img5.png) no-repeat;
+    background-position: 0px -184px;
+    background-size: cover;
+}
+
+.cerara-fileds .ovarlay {
+    background: rgba(255, 196, 0 , .9);
+    height: 648px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cerara-fileds .ovarlay div {
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cerara-fileds .ovarlay p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.cerara-fileds .ovarlay h2 {
+    font-size: 45px;
+}
+
+/* sulescrilee */
+.sulescrilee  {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../image/Design.png);
+}
+
+.sulescrilee h2 {
+    font-size: 50px;
+}
+
+.sulescrilee .content {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.sulescrilee .content p {
+        margin: 8px auto 35px ;
+        width: 50%;
+}
+
+form {
+    width: 60%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 8px grey,
+    0px 0px 8px grey ;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    width: 64%;
+}
+
+input[type="submit"] {
+    width: 35%;
+}
+/* footer */
+footer {
+    padding: 130px 0;
+    background: black;
+    color: var(--gray);
+}
+
+footer .container  {
+    display: flex;
+}
+
+footer .title-here {
+    width: 37%;
+    padding-right: 65px;
+}
+
+footer .about , .servise , .other {
+    width: 19.3%;
+}
+
+footer h5 {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+
+footer p {
+    margin: 21px 0;
+}
+
+footer ul {
+    margin: 24px 0;
+}
+
+footer ul li {
+    padding: 4px 0;
+}
+
+footer .copyright {
+    text-align: center;
+}
+
+footer .copyright span {
+    color: var(--yellow);
+}
+
+footer .icon img {
+    cursor: pointer;
+}

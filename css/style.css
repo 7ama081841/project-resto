@@ -45,7 +45,7 @@ li {
 
 .overlay1 {
     background: url(../image/bg2.png) no-repeat;
-    background-position: 0px 1px;
+    background-position: 0px 0px;
     background-size: cover ;
 }
 
